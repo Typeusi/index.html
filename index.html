@@ -1,5 +1,4 @@
-
-           <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -106,12 +105,23 @@
             font-size: 3.5rem;
             margin-bottom: 20px;
             text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeText 3s infinite alternate;
         }
 
         .hero p {
             font-size: 1.2rem;
             line-height: 1.8;
             color: #f0f0f0;
+            animation: fadeText 3s infinite alternate;
+        }
+
+        @keyframes fadeText {
+            from {
+                opacity: 0.3;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         .profile {
@@ -249,7 +259,7 @@
     </div>
 
     <section class="profile" id="profile">
-        <img src="ppo.jpg" alt="Profile Picture">
+        <img src="zezo.jpg" alt="Profile Picture">
         <h2>Aboelyazzed Hatem</h2>
         <p>Software Engineer | Web Developer | Designer</p>
     </section>
@@ -270,7 +280,7 @@
         <a href="https://www.facebook.com/profile.php?id=61557580576345&mibextid=JRoKGi"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="https://www.linkedin.com/in/aboalazed-hatem-aa67aa31a?"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
         <a href="https://wa.me/01060965014"><i class="fab fa-whatsapp"></i></a>
     </section>
 
@@ -290,5 +300,15 @@
             ];
 
             const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-            document.body
-                </script>
+            document.body.style.background = randomBackground;
+        }
+    </script>
+</body>
+
+</html>
+
+
+           
+       
+
+        
